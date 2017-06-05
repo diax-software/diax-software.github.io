@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+    <script>
+        const images = ["assets/images/POG.jpg", "assets/images/POG.jpg"];
+        switchImage();
+        function switchImage() {
+            let i = 0;
+            while (true) {
+                sleep(1000);
+                if (i === images.length) {
+                    i = 0;
+                }
+                document.getElementById("image").src = images[i];
+                i++
+            }
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+    </script>
 </head>
+<body>
+<img src="assets/images/POG.jpg" id="image">
+</body>
 </html>
