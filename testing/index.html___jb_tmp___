@@ -4,6 +4,6 @@
     <title>diax.me</title>
 </head>
 <body>
-<div class="center"><a href="testing"><img src="img/POG.jpg"></a></div>
+<div class="center"><p style="display: inline-block">testing</p></div>
 </body>
 </html>
