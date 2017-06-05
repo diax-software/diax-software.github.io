@@ -3,9 +3,40 @@ html {
     display: block;
 }
 
+body {
+    margin: 0;
+}
+
 .center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li.navitem {
+    float: left;
+    display: block;
+    padding: 1%;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+a.navlink:hover, li.navitem:hover {
+    color: #00ccff;
+}
+
+a.navlink {
+    text-decoration: none !important;
+    color: white;
 }
