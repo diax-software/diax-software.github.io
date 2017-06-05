@@ -7,10 +7,18 @@ img {
     margin-top: -250px;
     margin-left: -250px;
     border-radius: 50%;
-    -webkit-animation:rotating 10s infinite linear
+    -webkit-animation: rotating 10s infinite linear
+}
+
+table {
+    border: 1px solid black !important;
 }
 
 @-webkit-keyframes rotating {
-    from { -webkit-transform: rotate(0deg);}
-    to { -webkit-transform: rotate(359deg);}
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }
