@@ -52,6 +52,21 @@ li.current {
     color: #808080;
 }
 
+a {
+    color: white !important;
+}
+
 a.navlink:hover, li.navitem:hover {
     color: #00ccff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace !important;
+    text-decoration: none;
+    text-align: center;
 }
