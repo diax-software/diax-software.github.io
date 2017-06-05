@@ -1,6 +1,6 @@
 html {
-    background-image: url("../img/galaxy.jpg");
-    display: inline-block;
+    background-image: url("../images/galaxy.jpg");
+    display: block;
 }
 
 .center {
