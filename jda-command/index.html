@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/lucida.css">
-  <link rel="stylesheet" type="text/css" href="/assets/css/jda-command.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/lucida.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/jda-command.css">
+    <title>JDA-Command</title>
 </head>
 <body>
 <div id="wrapper">
-<h1>JDA-Command</h1>
-<h5>Small, powerful and lightweight command library for JDA.</h5>
+    <h1><u>JDA-Command</u></h1>
+    <h5>Small, powerful and lightweight command library for JDA.</h5>
+    <p>
+        This command library was built to help people make amazing bots within JDA!<br>
+        It uses maven for dependency management because I am an XML fanboy,<br>
+        but I also find gradle cool and use it forsome projects.<br>
+        Thank you for the amazing people at JDA for inspiring the creation of this library,<br>
+        go and check them out<a href="https://github.com/DV8FromTheWorld/JDA/">here</a>.
+    </p>
+    <h3>Examples:</h3>
+    <p>
+        This is a command which echoes the input of the user if their sentence begins with the bot's prefix and <code>echo</code>,
+        <code>repeat</code> or <code>copy</code>.<br/>
+        If the input was <code>bot, echo hello!</code> the output would be <code>hello!</code> (If the prefix was <code>bot, </code>)
+    </p>
+    <pre><code>
+        @CommandDescription(name = "Echo", triggers = {
+            "echo",
+            "repeat",
+            "copy"
+        }, description = "This command echoes what you say!",
+        args = 1)
+        public class Echo implements Command {
 
-This command library was built to help people make amazing bots within JDA!
-<br>
-It uses maven for dependency management because I am an XML fanboy,<br>but I also find gradle cool and use it for some projects.
-<br>
-Thank you for the amazing people at JDA for inspiring the creation of this library,<br>go and check them out at <link>https://github.com/DV8FromTheWorld/JDA/</link> 
+            @Override
+            public void execute(Message message, String args) {
+                message.getChannel().sendMessage(args).queue();
+            }
+        }
+    </code></pre>
 
-<h3>Examples:</h3>
+    <p>For more detailed examples please see the example repository <a href="https://github.com/Comportment/JDA-Command-Examples">here</a>.<br />
+    You can also see the JavaDocs <a href="javadocs/apidocs">here</a>.</p>
+    <br>
+    <h3>Bots using JDA-Command:</h3>
+    <hr>
+    <p>Examples marked with a <b>*</b> may not be suitable for beginners.</p>
+    <ul>
+        <li><a href="https://github.com/Comportment/Diax">Diax</a> by Comportment#9489<b>*</b></li>
+        <li><a href="https://github.com/Comportment/JDASelfBot">JDASelfBot</a> by Comportment#9489</li>
+    </ul>
 
-This is a command which echoes the input of the user if their sentence begins with the bot's prefix and `echo`, `repeat` or `copy`.
+    <h4>Use JDA-Command in your projects today!</h4>
+    The current promoted version is 1.0.7
+    <h5>Maven</h5>
+    <pre><code class="xml">
+&lt;!--Repository for JDA-Command--&gt;
+&lt;repository&gt;
+    &lt;id&gt;jitpack.io&lt;/id&gt;
+    &lt;name&gt;jitpack&lt;/name&gt;
+    &lt;url&gt;https://jitpack.io&lt;/url&gt;
+&lt;/repository&gt;
+        &lt;!--Repository for JDA--&gt;
+&lt;repository&gt;
+    &lt;id&gt;jcenter&lt;/id&gt;
+    &lt;name&gt;jcenter-bintray&lt;/name&gt;
+    &lt;url&gt;http://jcenter.bintray.com&lt;/url&gt;
+&lt;/repository&gt;
 
+        &lt;!--Dependency for JDA-Command--&gt;
+&lt;dependency&gt;
+   &lt;groupId&gt;com.github.Comportment&lt;/groupId&gt;
+   &lt;artifactId&gt;JDA-Command&lt;/artifactId&gt;
+   &lt;version&gt;1.0.7&lt;/version&gt;
+&lt;/dependency&gt;
+        &lt;!--Dependency for JDA--&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;net.dv8tion&lt;/groupId&gt;
+    &lt;artifactId&gt;JDA&lt;/artifactId&gt;
+    &lt;version&gt;3.1.0_206&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
 
-If the input was `bot, echo hello!` the output would be `hello!` (If the prefix was `bot, `) 
-<code>
-@CommandDescription(name = "Echo", triggers = {"echo", "repeat", "copy"}, 
-    description = "This command echoes what you say!", 
-args = 1)
-public class Echo implements Command {
+    <h5>Gradle</h5>
 
-    @Override
-    public void execute(Message message, String args) {
-        message.getChannel().sendMessage(args).queue();
-    }
-}
-</code>
-
-For more detailed examples please see the example repository
-<a href="https://github.com/Comportment/JDA-Command-Examples">here</a>.
-<br>
-<h3>Bots using JDA-Command:</h3><hr>
-<p>Examples marked with a <b>*</b> may not be suitable for beginners.</p>
-<ul>
-    <li><a href = "https://github.com/Comportment/Diax">Diax</a> by Comportment#9489<b>*</b></li>
-    <li><a href = "https://github.com/Comportment/JDASelfBot">JDASelfBot</a> by Comportment#9489</li>
-</ul>
-
-<h4>Use JDA-Command in your projects today!</h4>
-
-The current promoted version is 1.0.7
-
-<h5>Maven</h5>
-
-<code>
-<!--Repository for JDA-Command-->
-<repository>
-    <id>jitpack.io</id>
-    <name>jitpack</name>
-    <url>https://jitpack.io</url>
-</repository>
-<!--Repository for JDA-->
-<repository>
-    <id>jcenter</id>
-    <name>jcenter-bintray</name>
-    <url>http://jcenter.bintray.com</url>
-</repository>
-  
-<!--Dependency for JDA-Command-->
-<dependency>
-   <groupId>com.github.Comportment</groupId>
-   <artifactId>JDA-Command</artifactId>
-   <version>1.0.7</version>
-</dependency>
-<!--Dependency for JDA-->
-<dependency>
-    <groupId>net.dv8tion</groupId>
-    <artifactId>JDA</artifactId>
-    <version>3.1.0_206</version>
-</dependency>
-</code>
-
-<h5>Gradle</h5>
-
-<code>
+    <pre><code class="Groovy">
 repositories {
     //This repository is needed for JDA.
     jcenter()
@@ -95,7 +97,7 @@ dependencies {
     //JDA dependency
     compile group: 'net.dv8tion', name: 'JDA', version: '3.1.0_206'
 }
-</code>
-  </div>
+</code></pre>
+</div>
 </body>
 </html>

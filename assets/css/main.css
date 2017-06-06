@@ -1,5 +1,5 @@
 html {
-    background-image: url("../images/background.png");
+    background-image: url("../images/backgrounds/main.png");
     display: block;
 }
 
@@ -49,7 +49,7 @@ li.current {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    color: #808080;
+    color: #808080 !important;
 }
 
 a {
