@@ -1,10 +1,16 @@
 h5 {
     font-family: Verdana, Geneva, sans-serif !important;
-    color: lightslategray;
+    color: white;
     font-style: oblique;
 }
 
 html {
     background-image: url("../images/backgrounds/jda-command.png");
     display: block;
+}
+
+pre {
+    background-color: white !important;
+    color: black !important;
+    overflow: auto;
 }
