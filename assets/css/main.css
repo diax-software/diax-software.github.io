@@ -57,7 +57,7 @@ a {
 }
 
 a.navlink:hover, li.navitem:hover {
-    color: #00ccff;
+    color: #00ccff !important;
 }
 
 footer {
@@ -69,4 +69,9 @@ footer {
     font-family: "Lucida Console", "Lucida Sans Typewriter", monaco, "Bitstream Vera Sans Mono", monospace !important;
     text-decoration: none;
     text-align: center;
+}
+
+#wrapper {
+  width: 70%;     
+  margin: 0 auto;
 }
