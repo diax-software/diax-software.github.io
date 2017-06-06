@@ -20,7 +20,7 @@ This is a command which echoes the input of the user if their sentence begins wi
 
 
 If the input was `bot, echo hello!` the output would be `hello!` (If the prefix was `bot, `) 
-```java
+<code>
 @CommandDescription(name = "Echo", triggers = {"echo", "repeat", "copy"}, 
     description = "This command echoes what you say!", 
 args = 1)
@@ -31,7 +31,7 @@ public class Echo implements Command {
         message.getChannel().sendMessage(args).queue();
     }
 }
-```
+</code>
 
 For more detailed examples please see the example repository
 <a href="https://github.com/Comportment/JDA-Command-Examples">here</a>.
@@ -49,7 +49,7 @@ The current promoted version is 1.0.7
 
 <h5>Maven</h5>
 
-```xml
+<code>
 <!--Repository for JDA-Command-->
 <repository>
     <id>jitpack.io</id>
@@ -77,11 +77,11 @@ The current promoted version is 1.0.7
     <artifactId>JDA</artifactId>
     <version>3.1.0_206</version>
 </dependency>
-```
+</code>
 
 <h5>Gradle</h5>
 
-```gradle
+<code>
 repositories {
     //This repository is needed for JDA.
     jcenter()
@@ -95,7 +95,7 @@ dependencies {
     //JDA dependency
     compile group: 'net.dv8tion', name: 'JDA', version: '3.1.0_206'
 }
-```
+</code>
 
 </body>
 </html>
