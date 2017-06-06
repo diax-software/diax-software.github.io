@@ -8,6 +8,7 @@ img {
     margin-left: -250px;
     border-radius: 50%;
     -webkit-animation: rotating 10s infinite linear
+    cursor: default;
 }
 
 table {
