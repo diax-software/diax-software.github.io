@@ -70,3 +70,8 @@ footer {
     text-decoration: none;
     text-align: center;
 }
+
+#wrapper {
+  width: 70%;     
+  margin: 0 auto;
+}
