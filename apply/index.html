@@ -14,7 +14,7 @@
     <meta property="og:title" content="Diax">
     <meta property="og:site_name" content="Diax">
     <meta property="og:url" content="http://diax.me/">
-    <meta property="og:image" content="https://diax.me/src/img/purple_cog.jpg">
+    <meta property="og:image" content="../src/img/purple_cog.jpg">
     <meta property="og:image:width" content="280">
     <meta property="og:image:height" content="280">
     <meta property="og:description"
@@ -22,8 +22,14 @@
     <meta property="description"
           content="Open-source multi-platform cloud-hosted modular bot, controlled via a webpanel. Modules can be created by anyone and toggled directly on the webpanel.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
-    <link rel="stylesheet" href="http://diax.me/src/css/apply.css" type="text/css">
+    <link rel="stylesheet" href="../src/css/apply.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="../src/js/main.js"></script>
 </head>
 <body>
 <nav class="nav has-shadow">
@@ -39,40 +45,70 @@
             <a class="nav-item is-tab" href="http://www.diax.me/developers/">Developers</a>
         </div>
     </div>
-</nav>
-<br><br>
+</nav><br>
+<article class="message is-danger container" id="error-message" style="display: none;">
+    <div class="message-header" style="text-align: center;">
+        <strong>All Fields Are Required!</strong>
+    </div>
+    <div class="message-body">
+        All fields must be filled.
+    </div>
+</article>
+<article class="message is-success container" id="success-message" style="display: none;">
+    <div class="message-header" style="text-align: center;">
+        <strong>Submitted!</strong>
+    </div>
+    <div class="message-body">
+        But not really, the submissions service isn't ready yet, please be patient.
+    </div>
+</article>
 <div id="form" class="form">
-    <div id="fields">
-        <div class="field">
-            <label class="label">Name</label>
-            <p class="control">
-                <input class="input is-primary" type="text" placeholder="John Smith">
-            </p>
-            <p class="help is-primary">What is your name?</p>
-        </div>
-        <div class="field">
-            <label class="label">Age</label>
-            <p class="control">
-                <input class="input is-primary" type="text" placeholder="18">
-            <p>
-            <p class="help is-primary">How old are you?</p>
-        </div>
-        <div class="field">
-            <label class="Previous Projects"></label>
-            <p class="control">
-                <textarea class="textarea is-primary" placeholder="Some of your previous projects."></textarea>
-            </p>
-            <p class="help is-primary">Provide a description and if possible, link/github repo</p>
-        </div>
+    <div class="field">
+        <label class="label">Name</label>
+        <p class="control">
+            <input class="input is-primary" type="text" placeholder="John Smith" id="name-field">
+        </p>
+        <p class="help is-primary">What is your name?</p>
+    </div>
+    <div class="field">
+        <label class="label">Age</label>
+        <p class="control">
+            <input class="input is-primary" type="text" placeholder="18" id="age-field">
+        <p>
+        <p class="help is-primary">How old are you?</p>
+    </div>
 
-        <div class="field is-grouped">
-            <p class="control">
-                <button class="button is-primary" id="submit-button">Submit</button>
-            </p>
-            <p class="control">
-                <button class="button is-link" id="cancel-button">Cancel</button>
-            </p>
-        </div>
+    <div class="field">
+        <label class="label">Email</label>
+        <p class="control">
+            <input class="input is-primary" type="text" placeholder="johnsmith@mail.me" id="email-field">
+        <p>
+        <p class="help is-primary">What is your email?</p>
+    </div>
+
+    <div class="field">
+        <label class="label">Previous Projects</label>
+        <p class="control">
+            <textarea class="textarea is-primary" placeholder="Some of your previous projects." id="projects-field"></textarea>
+        </p>
+        <p class="help is-primary">Provide a description for each project and if possible, a link.</p>
+    </div>
+
+    <div class="field">
+        <label class="label">Why do you want to join?</label>
+        <p class="control">
+            <textarea class="textarea is-primary" placeholder="Explain why you want to join our team." id="why-field"></textarea>
+        </p>
+        <p class="help is-primary">Please provide an adequate amount of information.</p>
+    </div>
+
+    <div class="field is-grouped">
+        <p class="control">
+            <button class="button is-primary" id="submit-button">Submit</button>
+        </p>
+        <p class="control">
+            <button class="button is-link" id="cancel-button">Cancel</button>
+        </p>
     </div>
 </div>
 </body>
