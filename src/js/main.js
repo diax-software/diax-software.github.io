@@ -22,7 +22,6 @@ $(function() {
         $("#form").slideUp(300);
         $("#success-message").slideDown(300);
         window.open('mailto:comportment@diax.me?subject=Application+for+the+Diax+team&body=' + emailString.replace(" ", "+") + '', 'Apply for the Diax Team', 'height=500,width=500');
-        //Send emailString to an email
     });
     $("#cancel-button").click(clearAllFields);
 });
