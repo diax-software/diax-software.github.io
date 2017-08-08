@@ -1,14 +1,33 @@
-#center {
+html {
+	background-color: #686563;
+}
+.center {
   text-align: center;
+  color: white;
 }
 
 #cog {
-  border-radius: 50%;
-  -webkit-animation:spin 4s linear infinite;
+/*  -webkit-animation:spin 4s linear infinite;
   -moz-animation:spin 4s linear infinite;
-  animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite; */
   width: 400px;
 }
+
+.nav {
+	color: #aaa4a2;
+	background-color: #3e3b3a;
+	
+}
+.nav-item a, a.nav-item, .title{
+	color: white;
+}
+
+/* Start of Team */
+.devs{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
