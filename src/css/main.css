@@ -1,6 +1,12 @@
 html {
 	background-color: #686563;
 }
+
+body {
+	padding-top: 65px;
+	padding-bottom:20px;
+	background-color: inherit;
+}
 .center {
   text-align: center;
   color: white;
@@ -15,17 +21,22 @@ html {
 
 .nav {
 	color: #aaa4a2;
-	background-color: #3e3b3a;
+	background-color: inherit;
 	
 }
 .nav-item a, a.nav-item, .title{
-	color: white;
+	color: inherit;
 }
 
-/* Start of Team */
-.devs{
-    margin-left: 500px;
-    margin-right: 500px;
+.navbar-brand {
+	font-size: 2em;
+}
+.img-thumbnail {
+	background-color: black;
+	border-color: black;
+}
+.title {
+	color: white;
 }
 
 
