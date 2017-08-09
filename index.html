@@ -12,18 +12,40 @@
     <meta property="og:image" content="src/img/purple_cog.jpg">
     <meta property="og:image:width" content="280"><meta property="og:image:height" content="280">
     <meta property="og:description" content="Open-source multi-platform cloud-hosted modular bot, controlled via a webpanel. Modules can be created by anyone and toggled directly on the webpanel.">
-    <meta property="description" content="Open-source multi-platform cloud-hosted modular bot, controlled via a webpanel. Modules can be created by anyone and toggled directly on the webpanel.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+    <meta property="description" content="Open-sousrce multi-platform cloud-hosted modular bot, controlled via a webpanel. Modules can be created by anyone and toggled directly on the webpanel.">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/main.css">
 	<link rel="icon" href="src/img/favicon.ico?" type="image/x-icon"/>
 </head>
 <body>
-<nav class="nav has-shadow" >
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="src/img/diax.png" alt="D" style="height: 0.9em; display:inline-block;"/>iax</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="nav-item is-tab is-active" href="http://www.diax.me/">Home</a></li>
+			<li><a class="nav-item is-tab" href="http://www.diax.me/apply/">Apply</a></li>
+			<li><a class="nav-item is-tab" href="http://www.diax.me/developers/">Developers</a></li>
+			<li><a class="nav-item is-tab" href="https://github.com/diax-software/">GitHub</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!--</body><nav class="nav has-shadow" >
     <div class="container">
         <div class="nav-left">
             <a class="nav-item" href="http://diax.me/">
-                <h1 class="title"><img src="src/img/diax.png" />iax</h1>
+                <h1 class="title"><img src="src/img/diax.png" alt="D"/>iax</h1>
             </a>
         </div>
         <div class="nav-right nav-menu">
@@ -33,7 +55,7 @@
             <a class="nav-item is-tab" href="https://github.com/diax-software/">GitHub</a>
         </div>
     </div>
-</nav><br>
+</nav><br>-->
 <div class="center">
     <br>
     <img src="src/img/diax.png" draggable="false" id="cog" alt="Diax"/><br><br>
