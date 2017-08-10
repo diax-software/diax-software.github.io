@@ -3,8 +3,6 @@ html {
 }
 
 body {
-	padding-top: 65px;
-	padding-bottom:20px;
 	background-color: inherit;
 }
 .center {
@@ -19,9 +17,10 @@ body {
   width: 400px;
 }
 
-.nav {
+.navbar, .nav {
 	color: #aaa4a2;
-	background-color: inherit;
+	background-color: #222;
+    border-color: #080808;
 	
 }
 .nav-item a, a.nav-item, .title{
