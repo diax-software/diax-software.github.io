@@ -5,6 +5,14 @@
       <title>Diax | Discord Bot</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+      <link rel="stylesheet" href="main.css">
+
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+      <script type="text/javascript" src="main.js"></script>
    </head>
    <header>
       <nav class="level is-mobile">
@@ -35,9 +43,39 @@
           </div>
       </nav>
    </header>
+   <header id="fixed-nav">
+      <nav class="level is-mobile">
+         <div class="level-left has-text-centered">
+            <a class="navbar-item" href="http://diax.me/">
+            <span>Diax Discord Bot</span>
+            </a>
+         </div>
+         <div class="level-right">
+            <a class="navbar-item" href="https://discordapp.com/oauth2/authorize?client_id=295500621862404097&amp;scope=bot&amp;permissions=36817984" target="_blank">
+            <span>Invite</span>
+            </a>
+            <a class="navbar-item" href="https://github.com/diax-software" target="_blank">
+            <span class="icon">
+            <img src="http://diax.me/img/github.png" alt="GitHub">
+            </span>
+            </a>
+            <a class="navbar-item" href="https://discordapp.com/invite/5sJZa2y" target="_blank">
+            <span class="icon">
+            <img src="http://diax.me/img/discord.svg" alt="Discord">
+            </span>
+            </a>
+            <a class="navbar-item" href="https://discordbots.org/bot/295500621862404097" target="_blank">
+            <span class="icon">
+            <img src="http://diax.me/img/dbots.svg" alt="Discord Bots Page">
+            </span>
+          </a>
+          </div>
+      </nav>
+   </header>
    <body>
-     <section class="hero is-danger is-bold is-small is-unselectable">
+     <section class="hero is-danger is-bold is-small is-unselectable" id="new-website">
        <div class="hero-body">
+         <i class="fa fa-close" id="new-website-close"></i>
          <div class="container">
            <h1 class="title">
              New Website!
@@ -176,23 +214,23 @@
            <div class="column">
              <div class="box">
                <div class="columns is-gapless is-one-quarter is-centered">
-                 <div class="column">
-                   <figure class="image is-128x128">
-                      <img src="https://cdn.discordapp.com/avatars/293884638101897216/edde83afea44c184acf491a3ecfef40b.png">
+                 <div class="column is-one-quarter">
+                   <figure class="pfp-parent">
+                      <img class="pfp" src="https://cdn.discordapp.com/avatars/293884638101897216/edde83afea44c184acf491a3ecfef40b.png">
                     </figure>
                  </div>
                  <div class="column">
                      <span>
-                       <b>comportment#4475</b><br />
-                       <i>Owner</i><br />
-                       As the owner of Diax, I am in charge of all sorts of development and quality control to make sure Diax is the best he can be.<br/>
-                       In early 2017 I started this project to challenge myself, meet new people and to have fun.<br />
+                       <b>comportment#4475</b><br><br>
+                       <i>Owner</i><br>
+                       As the owner of Diax, I am in charge of all sorts of development and quality control to make sure Diax is the best he can be.<br><br>
+                       In early 2017 I started this project to challenge myself, meet new people and to have fun.<br>
                        At the moment I am responsible for the website, as well as Diax himself.
                      </span>
-                     <br /><br />
+                     <br><br>
                      <a href="https://github.com/diax-software" target="_blank">
-                     <span class="icon">
-                     <h2 class="subtitle"><i class="fa fa-github" aria-hidden="true"></i></h2>
+                     <span class="icon is-medium">
+                     <h2 class="subtitle"><i class="fa fa-github fa-lg" aria-hidden="true"></i></h2>
                      </span>
                      </a>
                  </div>
