@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/comportment
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://diax.me
+  * I am comportment (https://keybase.io/comportment) on keybase.
+  * I have a public key with fingerprint 7095 2B37 4BA4 9200 1FAA  FEE7 6F99 F02A 7AF9 46D5
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010151e0bd57b05e245378bf28ad7e862146193bac03c40660e0860d8a9d917c52440a",
+            "fingerprint": "70952b374ba492001faafee76f99f02a7af946d5",
+            "host": "keybase.io",
+            "key_id": "6f99f02a7af946d5",
+            "kid": "010151e0bd57b05e245378bf28ad7e862146193bac03c40660e0860d8a9d917c52440a",
+            "uid": "cfe292341ef8ce53a194eefb7ce70e19",
+            "username": "comportment"
+        },
+        "service": {
+            "hostname": "diax.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1498503891,
+    "expire_in": 157680000,
+    "prev": "fb5c1c03dc93c45a42c6b6307b4fa1f9b4850680b5196f90faf6a9c2fd76977e",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.72
+Comment: https://keybase.io/crypto
+
+yMIrAnicrVJbSFRBGF4zTTe8YDclITiE9CA65+y5zRqZGamUivYQ5doyc84cPbi7
+Z9096wUTQqjQMiq1QKNSNughM5DQkixLSRLKsgfTQqEbdHkQKYQKmyP21mPzMjP/
+fN833/fzj8ZF2uwRvy82XW4d8/RGTIx0hGyHS45MNTDYUOsZZwNTRVY24lFJ0HRX
+6SrjZAALWIElAKuChIFAOF5wSDLWOBmpEpFFjuVFFjowUoBD4YEoAgJkEagygipk
+JUXgeB4gJp3RdF8FCfgDus+kshKAAocdEo8RDzkAWA0hjRBJ1CDUAIckpEFeVAVK
+rDSCFoOawyhIMnSD1ujFvWLvH/j/7Du0IqdohIOcg2eJJitEcCAW8oRoWFKIBAgL
+LWCQBHzISyy04fUbAdNLaNbGdIY+1OgKsXprhVkFqTqqy6CndMYfMExDMTy0WGma
+/qDTIpn1fgtVS7B7le/Guk+lXaSMGhII6oaPcbIUqZi6JcjyUBaAQ4ZsOkPq/HqA
+uHULIUiiDOiy/iE1VFLDgsLS2KoCaXQB8ZwiYtEBJMxriNUg5qkO5WCBhbS/QEOa
+iKDCaaokQkmyHAdJtc9gnAK1iSqoZFCv8CEzFCBM46OHrrW2CLstOmqNNV02e2zi
+35lrHVn3K6793PbUgQOR4R2Py4py8ibFodmChPH+qsLi1IXI8ZObks3Bgtjl+67e
+auel+Tjn3tRn5ZNfR682tnnCb08nb7jQtKO51A7vbnP1T9Vk8YWFW2aWz6Y4z59o
+uGJ8U+c8WxezH3yKTvRm9MxdT/nRJbfOTITD65O+7HE9PXXr2HCLOzOzeOeNmJ43
+OWe6b36+vcTvGzv6pODl5jQuabAstiO+u9bX0lY+d7wFT3cObyxYLlGKDuUPfe8M
+5+53vx+ejy/0JM4fLBmI6avP7ptZmI5tfl77OuHDWH5C8p2ue+962suWchddPWnF
+H7278669YmZLm7KMXjUxLqp+OvTzxUTdrj9iCj7v
+=wh5F
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/comportment
+
+==================================================================
